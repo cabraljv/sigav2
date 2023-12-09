@@ -6,11 +6,21 @@ Essa é a v2 do projeto, a versão inicial foi desenvolvida em  Typescript e é 
 
 [Siga V2 API em typescript e escala real](https://github.com/cabraljv/sigav2-ts)
 
+## Preview
+
+![Login](./docs/login.png)
+
+![add aluno](./docs/add_aluno.png)
+
+![add nota](./docs/add_nota.png)
+
+![add prof](./docs/cadastro_prof.png)
+
 ## O que é o SIGA?
 
 O SIGA como todos conhecemos é um sistema que permite gerenciar a vida academica dos docentes e discentes da UFJF. O sistema é utilizado para gerenciar matriculas, notas, frequencias, etc. O sistema é utilizado por todos os cursos da UFJF, e é um sistema que é utilizado por todos os alunos e professores da UFJF.
 
-## O que é o SIGA v2?
+## O que é o SIGA v2?me@cabraljv.de
 
 É uma pequena abstração de toda a complexidade presente no SIGA com as principais features necessárias.
 
