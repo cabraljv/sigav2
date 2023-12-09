@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Alunos</title>
+</head>
+
+<body>
+
+  <!-- Conteúdo Principal -->
+  <div class="container mt-4">
+    <h2>Lista de Alunos</h2>
+    <!-- Botão para acionar o modal -->
+
+    <div class="d-flex flex-row justify-content-between align-items-center mt-3">
+      <p id="professorName"></p>
+      <button id="btnNovoAluno" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Cadastrar Novo Aluno</button>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Matricula</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Curso</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="listaAlunos">
+        <!-- As linhas da tabela serão inseridas aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cadastrar Aluno</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Nome:</label>
+              <input type="text" class="form-control" id="aluno-nome">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Matricula:</label>
+              <input type="text" class="form-control" id="aluno-matricula">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Curso:</label>
+              <input type="text" class="form-control" id="aluno-curso">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="aluno-email">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" id="saveAluno" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/cadastroAluno.js"></script>
+</body>
+
+</html>
