@@ -1,3 +1,5 @@
+// João Victor Cabral - 202135027
+
 const { app, BrowserWindow } = require('electron');
 try {
   require('electron-reloader')(module)
